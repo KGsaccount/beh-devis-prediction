@@ -1,0 +1,301 @@
+id_devis,type_client,type_prestation,montant_eur,delai_reponse_jours,saison,client_recurrent,statut
+DEV-20250001,Grande entreprise,Grosse installation neuve,48082.87,13,Automne,0,Refuse
+DEV-20250002,Cabinet architecte,Installation chauffage,6559.45,13,Hiver,0,Accepte
+DEV-20250003,Grande entreprise,Maintenance contrat,2003.39,26,Hiver,1,Refuse
+DEV-20250004,Grande entreprise,Maintenance contrat,1707.53,6,Hiver,1,Accepte
+DEV-20250005,Particulier,Installation climatisation,6834.45,5,Ete,0,Refuse
+DEV-20250006,Grande entreprise,Maintenance contrat,1806.85,17,Automne,0,Refuse
+DEV-20250007,Grande entreprise,Installation climatisation,11521.09,21,Automne,1,Accepte
+DEV-20250008,Grande entreprise,Maintenance contrat,724.85,10,Automne,1,Accepte
+DEV-20250009,Particulier,Depannage,479.59,2,Hiver,0,Refuse
+DEV-20250010,Cabinet architecte,Installation chauffage,4888.46,21,Printemps,0,Refuse
+DEV-20250011,Cabinet architecte,Installation climatisation,6485.66,6,Printemps,0,Refuse
+DEV-20250012,Grande entreprise,Installation climatisation,9798.23,15,Hiver,1,Accepte
+DEV-20250013,Grande entreprise,Renovation plomberie,8809.84,16,Hiver,0,Refuse
+DEV-20250014,Grande entreprise,Installation climatisation,12475.08,13,Hiver,0,Accepte
+DEV-20250015,Cabinet architecte,Renovation plomberie,3261.44,14,Hiver,1,Accepte
+DEV-20250016,Particulier,Depannage,480.19,7,Ete,0,Refuse
+DEV-20250017,Cabinet architecte,Renovation plomberie,5362.43,10,Automne,0,Accepte
+DEV-20250018,Particulier,Renovation plomberie,2712.73,3,Hiver,0,Accepte
+DEV-20250019,Grande entreprise,Renovation plomberie,3480.38,16,Printemps,0,Accepte
+DEV-20250020,Grande entreprise,Grosse installation neuve,20579.66,19,Automne,0,Accepte
+DEV-20250021,Grande entreprise,Grosse installation neuve,66972.62,12,Automne,0,Accepte
+DEV-20250022,Cabinet architecte,Installation climatisation,6114.74,15,Automne,1,Accepte
+DEV-20250023,Grande entreprise,Installation climatisation,12482.88,30,Printemps,1,Accepte
+DEV-20250024,Grande entreprise,Maintenance contrat,1293.26,36,Automne,0,Accepte
+DEV-20250025,Grande entreprise,Grosse installation neuve,79608.77,35,Hiver,1,Refuse
+DEV-20250026,Particulier,Renovation plomberie,2940.52,4,Printemps,0,Accepte
+DEV-20250027,Cabinet architecte,Grosse installation neuve,49112.54,11,Hiver,1,Accepte
+DEV-20250028,Particulier,Installation chauffage,2339.28,4,Printemps,0,Accepte
+DEV-20250029,Particulier,Renovation plomberie,3444.12,4,Printemps,1,Accepte
+DEV-20250030,Grande entreprise,Renovation plomberie,7752.98,16,Hiver,0,Accepte
+DEV-20250031,Grande entreprise,Grosse installation neuve,76256.21,18,Automne,1,Refuse
+DEV-20250032,Grande entreprise,Renovation plomberie,7882.27,32,Hiver,0,Accepte
+DEV-20250033,Cabinet architecte,Maintenance contrat,433.26,13,Hiver,1,Accepte
+DEV-20250034,Cabinet architecte,Grosse installation neuve,29957.96,5,Hiver,0,Refuse
+DEV-20250035,Cabinet architecte,Installation chauffage,2853.23,18,Printemps,1,Accepte
+DEV-20250036,Particulier,Renovation plomberie,1882.49,6,Hiver,0,Accepte
+DEV-20250037,Particulier,Depannage,453.89,7,Printemps,1,Accepte
+DEV-20250038,Cabinet architecte,Grosse installation neuve,45453.25,13,Hiver,1,Accepte
+DEV-20250039,Particulier,Depannage,498.17,6,Automne,1,Accepte
+DEV-20250040,Grande entreprise,Grosse installation neuve,72523.76,22,Automne,0,Refuse
+DEV-20250041,Cabinet architecte,Installation chauffage,6445.04,3,Printemps,0,Refuse
+DEV-20250042,Grande entreprise,Grosse installation neuve,68454.91,23,Ete,0,Accepte
+DEV-20250043,Grande entreprise,Grosse installation neuve,21084.71,12,Automne,0,Accepte
+DEV-20250044,Cabinet architecte,Installation climatisation,4622.03,8,Automne,1,Accepte
+DEV-20250045,Grande entreprise,Grosse installation neuve,57179.56,18,Ete,1,Accepte
+DEV-20250046,Grande entreprise,Grosse installation neuve,72061.89,39,Automne,1,Accepte
+DEV-20250047,Cabinet architecte,Grosse installation neuve,13204.76,5,Automne,0,Refuse
+DEV-20250048,Cabinet architecte,Renovation plomberie,4291.56,10,Automne,1,Accepte
+DEV-20250049,Grande entreprise,Maintenance contrat,1637.21,16,Printemps,1,Accepte
+DEV-20250050,Particulier,Depannage,163.32,10,Hiver,1,Accepte
+DEV-20250051,Particulier,Renovation plomberie,2904.74,4,Hiver,0,Accepte
+DEV-20250052,Particulier,Depannage,553.04,6,Printemps,0,Refuse
+DEV-20250053,Grande entreprise,Maintenance contrat,1628.01,10,Printemps,1,Accepte
+DEV-20250054,Grande entreprise,Maintenance contrat,925.01,31,Printemps,0,Accepte
+DEV-20250055,Grande entreprise,Maintenance contrat,1921.51,8,Ete,0,Accepte
+DEV-20250056,Grande entreprise,Maintenance contrat,1103.81,23,Ete,1,Accepte
+DEV-20250057,Cabinet architecte,Grosse installation neuve,51827.18,12,Automne,1,Accepte
+DEV-20250058,Cabinet architecte,Grosse installation neuve,26601.94,13,Hiver,1,Accepte
+DEV-20250059,Particulier,Installation chauffage,4361.28,1,Hiver,1,Accepte
+DEV-20250060,Particulier,Renovation plomberie,2889.29,4,Automne,0,Refuse
+DEV-20250061,Grande entreprise,Grosse installation neuve,35313.98,28,Automne,0,Refuse
+DEV-20250062,Cabinet architecte,Installation chauffage,7210.1,27,Automne,0,Accepte
+DEV-20250063,Cabinet architecte,Installation chauffage,3575.49,10,Automne,1,Accepte
+DEV-20250064,Grande entreprise,Installation chauffage,4210.64,27,Automne,0,Accepte
+DEV-20250065,Grande entreprise,Maintenance contrat,1093.92,20,Hiver,1,Refuse
+DEV-20250066,Cabinet architecte,Renovation plomberie,5215.26,10,Printemps,0,Accepte
+DEV-20250067,Cabinet architecte,Grosse installation neuve,49738.14,8,Hiver,1,Refuse
+DEV-20250068,Cabinet architecte,Maintenance contrat,1558.53,11,Ete,0,Accepte
+DEV-20250069,Particulier,Depannage,283.36,8,Automne,0,Accepte
+DEV-20250070,Cabinet architecte,Grosse installation neuve,31561.36,16,Printemps,0,Accepte
+DEV-20250071,Particulier,Renovation plomberie,1978.87,2,Ete,0,Refuse
+DEV-20250072,Cabinet architecte,Renovation plomberie,4565.67,8,Hiver,1,Accepte
+DEV-20250073,Grande entreprise,Installation climatisation,12580.4,10,Hiver,0,Accepte
+DEV-20250074,Particulier,Depannage,465.4,5,Hiver,0,Refuse
+DEV-20250075,Particulier,Depannage,417.85,4,Hiver,1,Accepte
+DEV-20250076,Cabinet architecte,Installation chauffage,4640.32,13,Automne,1,Accepte
+DEV-20250077,Cabinet architecte,Grosse installation neuve,54646.09,14,Printemps,0,Refuse
+DEV-20250078,Grande entreprise,Installation climatisation,8525.02,4,Automne,0,Accepte
+DEV-20250079,Cabinet architecte,Renovation plomberie,2561.37,11,Ete,0,Refuse
+DEV-20250080,Grande entreprise,Grosse installation neuve,41018.84,32,Hiver,1,Refuse
+DEV-20250081,Grande entreprise,Maintenance contrat,648.81,14,Hiver,0,Accepte
+DEV-20250082,Cabinet architecte,Grosse installation neuve,22190.05,8,Automne,0,Refuse
+DEV-20250083,Grande entreprise,Grosse installation neuve,19113.13,29,Hiver,0,Accepte
+DEV-20250084,Particulier,Installation chauffage,3813.12,9,Automne,1,Accepte
+DEV-20250085,Particulier,Installation chauffage,4538.16,2,Hiver,0,Accepte
+DEV-20250086,Particulier,Grosse installation neuve,22015.24,8,Ete,1,Accepte
+DEV-20250087,Grande entreprise,Grosse installation neuve,44484.05,12,Automne,0,Accepte
+DEV-20250088,Cabinet architecte,Grosse installation neuve,56644.02,8,Hiver,1,Refuse
+DEV-20250089,Particulier,Depannage,488.38,2,Hiver,0,Accepte
+DEV-20250090,Cabinet architecte,Grosse installation neuve,37608.98,4,Automne,0,Accepte
+DEV-20250091,Particulier,Renovation plomberie,2495.89,5,Hiver,0,Accepte
+DEV-20250092,Grande entreprise,Installation chauffage,10058.38,8,Printemps,1,Accepte
+DEV-20250093,Cabinet architecte,Installation climatisation,4625.32,12,Printemps,1,Accepte
+DEV-20250094,Cabinet architecte,Maintenance contrat,770.65,11,Hiver,0,Accepte
+DEV-20250095,Cabinet architecte,Depannage,726.8,10,Automne,0,Accepte
+DEV-20250096,Grande entreprise,Maintenance contrat,1397.86,14,Automne,1,Accepte
+DEV-20250097,Cabinet architecte,Grosse installation neuve,46775.47,7,Printemps,0,Accepte
+DEV-20250098,Particulier,Depannage,415.84,2,Automne,0,Accepte
+DEV-20250099,Particulier,Installation chauffage,4613.76,13,Hiver,0,Accepte
+DEV-20250100,Grande entreprise,Installation climatisation,6925.0,17,Hiver,1,Accepte
+DEV-20250101,Grande entreprise,Installation climatisation,6455.11,16,Ete,1,Accepte
+DEV-20250102,Grande entreprise,Grosse installation neuve,38317.02,11,Automne,1,Refuse
+DEV-20250103,Cabinet architecte,Grosse installation neuve,20072.59,22,Hiver,1,Accepte
+DEV-20250104,Grande entreprise,Installation chauffage,9895.06,13,Hiver,0,Refuse
+DEV-20250105,Grande entreprise,Grosse installation neuve,35844.56,21,Printemps,0,Accepte
+DEV-20250106,Grande entreprise,Grosse installation neuve,53373.83,23,Automne,0,Refuse
+DEV-20250107,Cabinet architecte,Renovation plomberie,5553.48,11,Hiver,0,Refuse
+DEV-20250108,Cabinet architecte,Grosse installation neuve,48664.0,4,Printemps,0,Refuse
+DEV-20250109,Particulier,Depannage,347.27,8,Automne,0,Accepte
+DEV-20250110,Grande entreprise,Grosse installation neuve,48004.21,13,Printemps,0,Accepte
+DEV-20250111,Cabinet architecte,Maintenance contrat,1553.8,17,Hiver,1,Accepte
+DEV-20250112,Particulier,Renovation plomberie,3861.09,5,Hiver,0,Accepte
+DEV-20250113,Cabinet architecte,Installation chauffage,6836.12,14,Printemps,0,Refuse
+DEV-20250114,Cabinet architecte,Grosse installation neuve,54066.21,21,Printemps,1,Accepte
+DEV-20250115,Particulier,Depannage,504.42,8,Automne,1,Refuse
+DEV-20250116,Grande entreprise,Renovation plomberie,3866.63,24,Ete,1,Accepte
+DEV-20250117,Grande entreprise,Installation chauffage,7647.63,26,Ete,1,Refuse
+DEV-20250118,Grande entreprise,Grosse installation neuve,24419.33,12,Automne,1,Accepte
+DEV-20250119,Cabinet architecte,Installation chauffage,5995.2,17,Printemps,0,Accepte
+DEV-20250120,Grande entreprise,Grosse installation neuve,78187.01,16,Printemps,0,Accepte
+DEV-20250121,Cabinet architecte,Maintenance contrat,989.9,9,Automne,1,Accepte
+DEV-20250122,Grande entreprise,Depannage,620.71,19,Hiver,0,Accepte
+DEV-20250123,Particulier,Depannage,166.13,4,Automne,0,Accepte
+DEV-20250124,Cabinet architecte,Installation chauffage,7590.83,5,Automne,0,Accepte
+DEV-20250125,Particulier,Renovation plomberie,1860.51,5,Hiver,0,Accepte
+DEV-20250126,Cabinet architecte,Grosse installation neuve,14869.1,9,Printemps,0,Refuse
+DEV-20250127,Cabinet architecte,Installation chauffage,3879.55,9,Hiver,0,Refuse
+DEV-20250128,Particulier,Installation climatisation,2794.89,5,Hiver,1,Accepte
+DEV-20250129,Particulier,Depannage,354.8,1,Printemps,1,Accepte
+DEV-20250130,Cabinet architecte,Grosse installation neuve,36481.99,9,Hiver,0,Refuse
+DEV-20250131,Particulier,Maintenance contrat,581.31,12,Automne,1,Accepte
+DEV-20250132,Grande entreprise,Grosse installation neuve,21210.51,34,Automne,0,Refuse
+DEV-20250133,Cabinet architecte,Maintenance contrat,520.57,11,Automne,1,Accepte
+DEV-20250134,Cabinet architecte,Grosse installation neuve,30494.95,11,Hiver,1,Refuse
+DEV-20250135,Cabinet architecte,Depannage,230.41,2,Hiver,0,Accepte
+DEV-20250136,Particulier,Depannage,464.19,3,Hiver,1,Accepte
+DEV-20250137,Grande entreprise,Installation chauffage,5090.55,26,Hiver,1,Accepte
+DEV-20250138,Cabinet architecte,Installation climatisation,5017.12,8,Automne,1,Accepte
+DEV-20250139,Grande entreprise,Grosse installation neuve,42829.92,30,Printemps,1,Accepte
+DEV-20250140,Particulier,Renovation plomberie,2958.13,10,Hiver,1,Accepte
+DEV-20250141,Cabinet architecte,Grosse installation neuve,13075.56,7,Automne,0,Accepte
+DEV-20250142,Cabinet architecte,Installation chauffage,3182.77,11,Printemps,1,Accepte
+DEV-20250143,Grande entreprise,Grosse installation neuve,72354.17,36,Hiver,1,Refuse
+DEV-20250144,Cabinet architecte,Installation chauffage,2606.41,4,Hiver,1,Accepte
+DEV-20250145,Cabinet architecte,Renovation plomberie,4262.16,8,Ete,0,Accepte
+DEV-20250146,Cabinet architecte,Grosse installation neuve,35272.34,4,Automne,1,Accepte
+DEV-20250147,Cabinet architecte,Grosse installation neuve,28155.78,6,Hiver,0,Accepte
+DEV-20250148,Cabinet architecte,Maintenance contrat,894.65,27,Automne,1,Accepte
+DEV-20250149,Cabinet architecte,Installation chauffage,6659.02,8,Automne,0,Accepte
+DEV-20250150,Particulier,Renovation plomberie,4444.21,1,Automne,1,Refuse
+DEV-20250151,Grande entreprise,Depannage,480.88,10,Hiver,1,Accepte
+DEV-20250152,Grande entreprise,Grosse installation neuve,38316.9,7,Hiver,0,Refuse
+DEV-20250153,Particulier,Renovation plomberie,2348.69,6,Automne,0,Accepte
+DEV-20250154,Cabinet architecte,Installation chauffage,5095.29,14,Hiver,0,Refuse
+DEV-20250155,Particulier,Depannage,457.47,9,Ete,1,Accepte
+DEV-20250156,Grande entreprise,Installation chauffage,5243.42,25,Automne,1,Accepte
+DEV-20250157,Cabinet architecte,Grosse installation neuve,28048.48,4,Hiver,0,Refuse
+DEV-20250158,Grande entreprise,Maintenance contrat,2047.22,22,Automne,0,Refuse
+DEV-20250159,Grande entreprise,Grosse installation neuve,21059.87,17,Automne,0,Accepte
+DEV-20250160,Grande entreprise,Maintenance contrat,1286.45,30,Automne,0,Refuse
+DEV-20250161,Particulier,Renovation plomberie,3990.45,9,Printemps,1,Accepte
+DEV-20250162,Grande entreprise,Installation chauffage,4683.27,44,Automne,1,Refuse
+DEV-20250163,Particulier,Maintenance contrat,342.64,2,Ete,0,Accepte
+DEV-20250164,Particulier,Depannage,212.19,2,Automne,1,Accepte
+DEV-20250165,Cabinet architecte,Installation climatisation,8625.12,8,Automne,0,Accepte
+DEV-20250166,Cabinet architecte,Maintenance contrat,400.83,10,Automne,1,Accepte
+DEV-20250167,Grande entreprise,Maintenance contrat,845.08,13,Hiver,0,Accepte
+DEV-20250168,Grande entreprise,Grosse installation neuve,19970.86,11,Hiver,1,Accepte
+DEV-20250169,Cabinet architecte,Installation chauffage,3175.27,13,Hiver,1,Accepte
+DEV-20250170,Grande entreprise,Maintenance contrat,1544.64,14,Printemps,0,Accepte
+DEV-20250171,Cabinet architecte,Renovation plomberie,3049.46,7,Printemps,1,Accepte
+DEV-20250172,Cabinet architecte,Installation climatisation,6579.89,4,Ete,1,Refuse
+DEV-20250173,Cabinet architecte,Installation chauffage,5669.02,2,Printemps,0,Refuse
+DEV-20250174,Grande entreprise,Installation chauffage,9715.93,34,Automne,0,Accepte
+DEV-20250175,Particulier,Depannage,152.13,12,Automne,1,Accepte
+DEV-20250176,Particulier,Depannage,534.02,9,Hiver,0,Refuse
+DEV-20250177,Cabinet architecte,Renovation plomberie,4766.99,14,Automne,0,Accepte
+DEV-20250178,Grande entreprise,Maintenance contrat,803.64,13,Ete,0,Accepte
+DEV-20250179,Grande entreprise,Maintenance contrat,1792.16,24,Ete,1,Refuse
+DEV-20250180,Grande entreprise,Installation climatisation,11429.48,10,Hiver,0,Refuse
+DEV-20250181,Grande entreprise,Installation climatisation,6559.53,19,Automne,0,Accepte
+DEV-20250182,Grande entreprise,Renovation plomberie,8488.4,12,Automne,1,Accepte
+DEV-20250183,Cabinet architecte,Installation climatisation,5908.58,15,Automne,0,Accepte
+DEV-20250184,Cabinet architecte,Renovation plomberie,4695.58,24,Automne,1,Refuse
+DEV-20250185,Grande entreprise,Depannage,1067.57,10,Automne,0,Accepte
+DEV-20250186,Grande entreprise,Installation climatisation,7428.44,14,Printemps,1,Accepte
+DEV-20250187,Cabinet architecte,Installation climatisation,8006.98,11,Ete,1,Accepte
+DEV-20250188,Particulier,Depannage,293.28,1,Printemps,0,Accepte
+DEV-20250189,Grande entreprise,Maintenance contrat,1834.73,7,Automne,1,Accepte
+DEV-20250190,Cabinet architecte,Installation climatisation,6764.29,24,Hiver,0,Accepte
+DEV-20250191,Grande entreprise,Grosse installation neuve,31630.41,21,Printemps,0,Accepte
+DEV-20250192,Particulier,Renovation plomberie,2949.09,3,Automne,0,Refuse
+DEV-20250193,Particulier,Renovation plomberie,2611.72,5,Hiver,1,Accepte
+DEV-20250194,Grande entreprise,Installation climatisation,5132.68,14,Automne,0,Refuse
+DEV-20250195,Particulier,Renovation plomberie,1604.42,5,Printemps,0,Accepte
+DEV-20250196,Particulier,Installation chauffage,3385.91,3,Automne,0,Accepte
+DEV-20250197,Cabinet architecte,Renovation plomberie,2036.61,10,Automne,0,Accepte
+DEV-20250198,Grande entreprise,Maintenance contrat,808.09,25,Hiver,0,Refuse
+DEV-20250199,Particulier,Installation chauffage,4900.73,8,Automne,0,Refuse
+DEV-20250200,Cabinet architecte,Installation climatisation,7392.33,23,Printemps,0,Refuse
+DEV-20250201,Grande entreprise,Grosse installation neuve,64530.56,22,Ete,0,Accepte
+DEV-20250202,Grande entreprise,Grosse installation neuve,37980.65,19,Ete,1,Refuse
+DEV-20250203,Cabinet architecte,Grosse installation neuve,53495.89,25,Automne,0,Accepte
+DEV-20250204,Particulier,Installation chauffage,4375.32,4,Hiver,1,Accepte
+DEV-20250205,Particulier,Installation chauffage,2504.11,1,Hiver,0,Accepte
+DEV-20250206,Particulier,Renovation plomberie,2003.02,9,Automne,0,Accepte
+DEV-20250207,Particulier,Depannage,461.89,6,Ete,0,Accepte
+DEV-20250208,Grande entreprise,Grosse installation neuve,28895.47,18,Printemps,0,Accepte
+DEV-20250209,Particulier,Installation chauffage,4029.17,9,Hiver,0,Accepte
+DEV-20250210,Cabinet architecte,Installation chauffage,7757.23,8,Printemps,1,Accepte
+DEV-20250211,Grande entreprise,Installation chauffage,3628.85,5,Automne,0,Accepte
+DEV-20250212,Cabinet architecte,Grosse installation neuve,13754.38,17,Hiver,0,Accepte
+DEV-20250213,Particulier,Depannage,596.89,3,Printemps,1,Accepte
+DEV-20250214,Grande entreprise,Renovation plomberie,6383.22,11,Automne,0,Accepte
+DEV-20250215,Grande entreprise,Installation climatisation,5527.97,5,Hiver,0,Accepte
+DEV-20250216,Grande entreprise,Installation chauffage,10060.58,27,Automne,0,Accepte
+DEV-20250217,Particulier,Depannage,546.17,1,Hiver,0,Accepte
+DEV-20250218,Particulier,Renovation plomberie,3376.7,11,Automne,0,Accepte
+DEV-20250219,Grande entreprise,Depannage,773.65,15,Automne,1,Accepte
+DEV-20250220,Cabinet architecte,Grosse installation neuve,25430.02,17,Automne,1,Accepte
+DEV-20250221,Cabinet architecte,Grosse installation neuve,15298.65,14,Hiver,0,Refuse
+DEV-20250222,Cabinet architecte,Renovation plomberie,4655.28,28,Ete,1,Accepte
+DEV-20250223,Grande entreprise,Installation chauffage,5722.24,22,Automne,1,Accepte
+DEV-20250224,Grande entreprise,Maintenance contrat,1615.07,32,Hiver,0,Refuse
+DEV-20250225,Cabinet architecte,Installation chauffage,6948.47,7,Hiver,1,Accepte
+DEV-20250226,Grande entreprise,Installation climatisation,4647.1,7,Hiver,1,Accepte
+DEV-20250227,Particulier,Maintenance contrat,836.14,10,Automne,1,Accepte
+DEV-20250228,Cabinet architecte,Grosse installation neuve,23523.26,3,Automne,1,Refuse
+DEV-20250229,Grande entreprise,Grosse installation neuve,73054.98,26,Ete,0,Accepte
+DEV-20250230,Particulier,Depannage,264.15,2,Automne,0,Refuse
+DEV-20250231,Particulier,Renovation plomberie,3637.7,6,Ete,0,Refuse
+DEV-20250232,Cabinet architecte,Grosse installation neuve,38186.11,28,Printemps,0,Refuse
+DEV-20250233,Grande entreprise,Installation climatisation,7708.95,25,Printemps,0,Accepte
+DEV-20250234,Cabinet architecte,Maintenance contrat,1182.82,9,Ete,1,Accepte
+DEV-20250235,Grande entreprise,Depannage,857.87,23,Hiver,0,Accepte
+DEV-20250236,Grande entreprise,Renovation plomberie,6271.71,14,Automne,0,Refuse
+DEV-20250237,Cabinet architecte,Installation climatisation,7686.77,34,Automne,1,Accepte
+DEV-20250238,Grande entreprise,Installation chauffage,10680.6,12,Printemps,0,Accepte
+DEV-20250239,Particulier,Depannage,338.67,5,Ete,0,Accepte
+DEV-20250240,Particulier,Installation climatisation,4815.62,8,Hiver,1,Accepte
+DEV-20250241,Grande entreprise,Grosse installation neuve,18785.6,22,Automne,0,Refuse
+DEV-20250242,Grande entreprise,Maintenance contrat,1829.57,23,Automne,0,Accepte
+DEV-20250243,Particulier,Installation climatisation,4841.04,3,Automne,0,Accepte
+DEV-20250244,Cabinet architecte,Grosse installation neuve,31562.25,9,Printemps,1,Accepte
+DEV-20250245,Grande entreprise,Installation chauffage,4277.32,29,Hiver,0,Accepte
+DEV-20250246,Grande entreprise,Installation climatisation,11706.22,28,Hiver,0,Refuse
+DEV-20250247,Grande entreprise,Installation climatisation,7699.56,22,Hiver,0,Refuse
+DEV-20250248,Cabinet architecte,Installation chauffage,6149.42,22,Hiver,0,Accepte
+DEV-20250249,Cabinet architecte,Grosse installation neuve,19796.52,18,Hiver,1,Accepte
+DEV-20250250,Cabinet architecte,Renovation plomberie,6325.05,17,Automne,0,Accepte
+DEV-20250251,Grande entreprise,Maintenance contrat,829.08,7,Hiver,1,Accepte
+DEV-20250252,Grande entreprise,Installation chauffage,5036.7,22,Hiver,0,Accepte
+DEV-20250253,Cabinet architecte,Installation chauffage,7066.71,12,Automne,0,Accepte
+DEV-20250254,Particulier,Maintenance contrat,1121.32,13,Ete,1,Accepte
+DEV-20250255,Particulier,Depannage,245.47,4,Automne,0,Accepte
+DEV-20250256,Grande entreprise,Renovation plomberie,5659.75,19,Ete,0,Accepte
+DEV-20250257,Grande entreprise,Renovation plomberie,7321.02,10,Automne,1,Accepte
+DEV-20250258,Particulier,Installation chauffage,5513.46,2,Ete,0,Accepte
+DEV-20250259,Particulier,Renovation plomberie,2826.68,13,Ete,0,Accepte
+DEV-20250260,Cabinet architecte,Installation climatisation,6274.56,14,Automne,1,Accepte
+DEV-20250261,Particulier,Depannage,483.77,16,Printemps,0,Refuse
+DEV-20250262,Grande entreprise,Renovation plomberie,7306.16,17,Printemps,0,Refuse
+DEV-20250263,Cabinet architecte,Grosse installation neuve,48624.69,4,Printemps,0,Accepte
+DEV-20250264,Particulier,Renovation plomberie,3494.77,4,Hiver,0,Accepte
+DEV-20250265,Grande entreprise,Maintenance contrat,709.48,14,Automne,0,Accepte
+DEV-20250266,Particulier,Renovation plomberie,4663.91,8,Hiver,1,Accepte
+DEV-20250267,Cabinet architecte,Grosse installation neuve,52383.55,16,Hiver,0,Accepte
+DEV-20250268,Particulier,Depannage,509.14,7,Hiver,1,Accepte
+DEV-20250269,Particulier,Installation chauffage,2399.45,20,Automne,0,Accepte
+DEV-20250270,Particulier,Installation chauffage,2817.59,12,Printemps,0,Accepte
+DEV-20250271,Particulier,Depannage,484.62,2,Ete,0,Refuse
+DEV-20250272,Particulier,Installation climatisation,2604.13,10,Automne,1,Accepte
+DEV-20250273,Particulier,Installation chauffage,5916.9,5,Hiver,0,Refuse
+DEV-20250274,Cabinet architecte,Grosse installation neuve,30160.08,9,Automne,0,Refuse
+DEV-20250275,Grande entreprise,Grosse installation neuve,63316.69,35,Hiver,1,Refuse
+DEV-20250276,Cabinet architecte,Installation climatisation,8442.29,6,Hiver,1,Accepte
+DEV-20250277,Cabinet architecte,Grosse installation neuve,30955.66,18,Ete,0,Refuse
+DEV-20250278,Cabinet architecte,Installation climatisation,5116.93,16,Automne,1,Accepte
+DEV-20250279,Grande entreprise,Grosse installation neuve,56350.69,11,Hiver,0,Accepte
+DEV-20250280,Grande entreprise,Installation climatisation,9206.01,7,Ete,0,Refuse
+DEV-20250281,Particulier,Installation chauffage,3636.56,5,Hiver,0,Accepte
+DEV-20250282,Particulier,Installation chauffage,4407.1,11,Ete,0,Accepte
+DEV-20250283,Particulier,Depannage,570.92,7,Ete,0,Accepte
+DEV-20250284,Particulier,Installation chauffage,3870.56,13,Ete,1,Accepte
+DEV-20250285,Cabinet architecte,Grosse installation neuve,21951.77,13,Ete,0,Accepte
+DEV-20250286,Cabinet architecte,Maintenance contrat,831.33,24,Hiver,1,Accepte
+DEV-20250287,Particulier,Depannage,327.35,3,Ete,1,Accepte
+DEV-20250288,Cabinet architecte,Renovation plomberie,2546.54,14,Ete,1,Accepte
+DEV-20250289,Cabinet architecte,Installation chauffage,3446.93,8,Ete,1,Accepte
+DEV-20250290,Particulier,Depannage,458.05,5,Hiver,1,Accepte
+DEV-20250291,Grande entreprise,Grosse installation neuve,39387.1,19,Printemps,1,Refuse
+DEV-20250292,Particulier,Installation chauffage,5819.59,7,Printemps,0,Accepte
+DEV-20250293,Grande entreprise,Installation climatisation,6473.13,12,Hiver,0,Accepte
+DEV-20250294,Particulier,Renovation plomberie,1846.24,7,Hiver,0,Accepte
+DEV-20250295,Grande entreprise,Depannage,880.34,19,Printemps,0,Accepte
+DEV-20250296,Grande entreprise,Renovation plomberie,8250.53,8,Automne,0,Accepte
+DEV-20250297,Grande entreprise,Grosse installation neuve,35521.14,6,Hiver,1,Accepte
+DEV-20250298,Grande entreprise,Maintenance contrat,867.38,31,Automne,0,Refuse
+DEV-20250299,Grande entreprise,Grosse installation neuve,29703.27,4,Ete,1,Accepte
+DEV-20250300,Grande entreprise,Maintenance contrat,1385.66,17,Automne,0,Accepte
