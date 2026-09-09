@@ -143,37 +143,75 @@ def verdict(p_acc):
 
 # ── SHAP waterfall (matplotlib) ───────────────────────────
 def shap_bar_chart(df_input):
-    """Simple bar chart des contributions logistiques (approximation SHAP)."""
+    """Contributions des variables à la prédiction (coefficients × valeurs standardisées)."""
     try:
         import shap
-        explainer = shap.LinearExplainer(model, scaler.transform(df_input))
-        sv = explainer.shap_values(scaler.transform(df_input))
+        x_s = scaler.transform(df_input)
+        explainer = shap.LinearExplainer(model, x_s)
+        sv = explainer.shap_values(x_s)
         vals = sv[0]
-        names = features
     except Exception:
-        # Fallback : utiliser les coefficients × valeurs standardisées
         x_s = scaler.transform(df_input)[0]
         vals = model.coef_[0] * x_s
-        names = features
 
-    # Garder les 8 plus importantes (en valeur absolue)
-    idx  = np.argsort(np.abs(vals))[-8:]
-    top_vals  = vals[idx]
-    top_names = [names[i].replace("type_prestation_", "").replace("type_client_", "").replace("saison_", "Saison ") for i in idx]
+    # Noms lisibles
+    label_map = {
+        "montant_eur":                                "Montant du devis",
+        "delai_reponse_jours":                        "Délai de réponse",
+        "client_recurrent":                           "Client récurrent",
+        "type_client_Grande entreprise":              "Client : Grande entreprise",
+        "type_client_Particulier":                    "Client : Particulier",
+        "type_prestation_Grosse installation neuve":  "Grosse installation neuve",
+        "type_prestation_Installation chauffage":     "Installation chauffage",
+        "type_prestation_Installation climatisation": "Installation climatisation",
+        "type_prestation_Maintenance contrat":        "Maintenance contrat",
+        "type_prestation_Renovation plomberie":       "Rénovation plomberie",
+        "saison_Ete":                                 "Saison : Été",
+        "saison_Hiver":                               "Saison : Hiver",
+        "saison_Printemps":                           "Saison : Printemps",
+    }
 
-    fig, ax = plt.subplots(figsize=(7, 3.5))
-    colors = ["#16A34A" if v > 0 else "#DC2626" for v in top_vals]
-    bars = ax.barh(top_names, top_vals, color=colors, height=0.55)
+    names = [label_map.get(f, f) for f in features]
+
+    # Garder uniquement les variables dont la valeur d'input n'est pas 0
+    # (les one-hot à 0 n'ont aucune contribution réelle pour ce devis)
+    input_vals = df_input.values[0]
+    active_mask = (input_vals != 0) | (np.array(features) == "montant_eur") | \
+                  (np.array(features) == "delai_reponse_jours")
+
+    active_vals  = vals[active_mask]
+    active_names = np.array(names)[active_mask]
+
+    # Si après filtrage il reste moins de 3 variables, prendre le top global
+    if len(active_vals) < 3:
+        idx = np.argsort(np.abs(vals))[-8:]
+        active_vals  = vals[idx]
+        active_names = np.array(names)[idx]
+
+    # Trier par contribution absolue
+    sort_idx     = np.argsort(np.abs(active_vals))
+    active_vals  = active_vals[sort_idx]
+    active_names = active_names[sort_idx]
+
+    fig, ax = plt.subplots(figsize=(7, max(3, len(active_vals) * 0.55)))
+    colors = ["#16A34A" if v > 0 else "#DC2626" for v in active_vals]
+    bars = ax.barh(active_names, active_vals, color=colors, height=0.55)
     ax.axvline(0, color="#6B7280", linewidth=0.8)
     ax.set_xlabel("Contribution à la probabilité d'acceptation", fontsize=9)
     ax.set_title("Pourquoi cette prédiction ?", fontsize=11, fontweight="bold", pad=10)
     ax.tick_params(labelsize=9)
-    for bar, val in zip(bars, top_vals):
-        ax.text(val + (0.003 if val >= 0 else -0.003), bar.get_y() + bar.get_height()/2,
-                f"{val:+.3f}", va="center", ha="left" if val >= 0 else "right", fontsize=8)
+
+    for bar, val in zip(bars, active_vals):
+        offset = max(abs(active_vals)) * 0.03
+        ax.text(val + (offset if val >= 0 else -offset),
+                bar.get_y() + bar.get_height() / 2,
+                f"{val:+.3f}", va="center",
+                ha="left" if val >= 0 else "right", fontsize=8.5, fontweight="bold")
+
     green_p = mpatches.Patch(color="#16A34A", label="Favorise l'acceptation")
     red_p   = mpatches.Patch(color="#DC2626", label="Favorise le refus")
     ax.legend(handles=[green_p, red_p], fontsize=8, loc="lower right")
+    ax.set_xlim(min(active_vals) * 1.3 - 0.01, max(active_vals) * 1.3 + 0.01)
     fig.tight_layout()
     return fig
 
