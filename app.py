@@ -143,18 +143,15 @@ def verdict(p_acc):
 
 # ── SHAP waterfall (matplotlib) ───────────────────────────
 def shap_bar_chart(df_input):
-    """Contributions des variables à la prédiction (coefficients × valeurs standardisées)."""
-    try:
-        import shap
-        x_s = scaler.transform(df_input)
-        explainer = shap.LinearExplainer(model, x_s)
-        sv = explainer.shap_values(x_s)
-        vals = sv[0]
-    except Exception:
-        x_s = scaler.transform(df_input)[0]
-        vals = model.coef_[0] * x_s
+    """
+    Contributions des variables à la prédiction.
+    Calcul direct : coeff_i × valeur_standardisée_i
+    (équivalent exact des valeurs SHAP pour une régression logistique linéaire)
+    """
+    x_scaled = scaler.transform(df_input)[0]          # valeurs standardisées
+    coefs    = model.coef_[0]                          # coefficients du modèle
+    contribs = coefs * x_scaled                        # contribution de chaque variable
 
-    # Noms lisibles
     label_map = {
         "montant_eur":                                "Montant du devis",
         "delai_reponse_jours":                        "Délai de réponse",
@@ -171,47 +168,53 @@ def shap_bar_chart(df_input):
         "saison_Printemps":                           "Saison : Printemps",
     }
 
-    names = [label_map.get(f, f) for f in features]
-
-    # Garder uniquement les variables dont la valeur d'input n'est pas 0
-    # (les one-hot à 0 n'ont aucune contribution réelle pour ce devis)
+    # Toujours inclure montant et délai + toutes variables non nulles dans l'input
     input_vals = df_input.values[0]
-    active_mask = (input_vals != 0) | (np.array(features) == "montant_eur") | \
-                  (np.array(features) == "delai_reponse_jours")
+    always_show = {"montant_eur", "delai_reponse_jours", "client_recurrent"}
+    mask = np.array([
+        (features[i] in always_show) or (input_vals[i] != 0)
+        for i in range(len(features))
+    ])
 
-    active_vals  = vals[active_mask]
-    active_names = np.array(names)[active_mask]
+    sel_contribs = contribs[mask]
+    sel_names    = [label_map.get(features[i], features[i])
+                    for i in range(len(features)) if mask[i]]
 
-    # Si après filtrage il reste moins de 3 variables, prendre le top global
-    if len(active_vals) < 3:
-        idx = np.argsort(np.abs(vals))[-8:]
-        active_vals  = vals[idx]
-        active_names = np.array(names)[idx]
+    # Trier par valeur absolue croissante (pour barh : plus grand en haut)
+    order        = np.argsort(np.abs(sel_contribs))
+    sel_contribs = sel_contribs[order]
+    sel_names    = [sel_names[i] for i in order]
 
-    # Trier par contribution absolue
-    sort_idx     = np.argsort(np.abs(active_vals))
-    active_vals  = active_vals[sort_idx]
-    active_names = active_names[sort_idx]
+    fig, ax = plt.subplots(figsize=(7, max(2.5, len(sel_contribs) * 0.6)))
+    colors = ["#16A34A" if v > 0 else "#DC2626" for v in sel_contribs]
+    bars   = ax.barh(sel_names, sel_contribs, color=colors, height=0.55)
 
-    fig, ax = plt.subplots(figsize=(7, max(3, len(active_vals) * 0.55)))
-    colors = ["#16A34A" if v > 0 else "#DC2626" for v in active_vals]
-    bars = ax.barh(active_names, active_vals, color=colors, height=0.55)
-    ax.axvline(0, color="#6B7280", linewidth=0.8)
+    ax.axvline(0, color="#6B7280", linewidth=1)
     ax.set_xlabel("Contribution à la probabilité d'acceptation", fontsize=9)
-    ax.set_title("Pourquoi cette prédiction ?", fontsize=11, fontweight="bold", pad=10)
+    ax.set_title("Pourquoi cette prédiction ?", fontsize=11,
+                 fontweight="bold", pad=10)
     ax.tick_params(labelsize=9)
 
-    for bar, val in zip(bars, active_vals):
-        offset = max(abs(active_vals)) * 0.03
-        ax.text(val + (offset if val >= 0 else -offset),
-                bar.get_y() + bar.get_height() / 2,
-                f"{val:+.3f}", va="center",
-                ha="left" if val >= 0 else "right", fontsize=8.5, fontweight="bold")
+    # Labels sur les barres
+    x_range = max(abs(sel_contribs)) if max(abs(sel_contribs)) > 0 else 0.01
+    offset  = x_range * 0.04
+    for bar, val in zip(bars, sel_contribs):
+        ax.text(
+            val + (offset if val >= 0 else -offset),
+            bar.get_y() + bar.get_height() / 2,
+            f"{val:+.3f}", va="center",
+            ha="left" if val >= 0 else "right",
+            fontsize=9, fontweight="bold"
+        )
+
+    ax.set_xlim(
+        min(sel_contribs) - x_range * 0.25,
+        max(sel_contribs) + x_range * 0.25
+    )
 
     green_p = mpatches.Patch(color="#16A34A", label="Favorise l'acceptation")
     red_p   = mpatches.Patch(color="#DC2626", label="Favorise le refus")
-    ax.legend(handles=[green_p, red_p], fontsize=8, loc="lower right")
-    ax.set_xlim(min(active_vals) * 1.3 - 0.01, max(active_vals) * 1.3 + 0.01)
+    ax.legend(handles=[green_p, red_p], fontsize=8)
     fig.tight_layout()
     return fig
 
